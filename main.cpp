@@ -63,16 +63,13 @@ int main() {
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
-            intVectGen(int_vect, i);
-            strVectGen(str_vect, i);
-            //
             myClock = clock();
-            insertion_sort(int_vect.begin(), int_vect.end());
+            insertion_sort(int_list.begin(), int_list.end());
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
             myClock = clock();
-            insertion_sort(str_vect.begin(), str_vect.end());
+            insertion_sort(str_list.begin(), str_list.end());
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
@@ -99,16 +96,13 @@ int main() {
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
-            intVectGen(int_vect, i);
-            strVectGen(str_vect, i);
-            //
             myClock = clock();
-            merge_sort(int_vect.begin(), int_vect.end());
+            merge_sort(int_list.begin(), int_list.end());
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
             myClock = clock();
-            merge_sort(str_vect.begin(), str_vect.end());
+            merge_sort(str_list.begin(), str_list.end());
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
@@ -135,16 +129,13 @@ int main() {
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
-            intVectGen(int_vect, i);
-            strVectGen(str_vect, i);
-            //
             myClock = clock();
-            quick_sort(int_vect.begin(), int_vect.end());
+            quick_sort(int_list.begin(), int_list.end());
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
             myClock = clock();
-            quick_sort(str_vect.begin(), str_vect.end());
+            quick_sort(str_list.begin(), str_list.end());
             myClock = clock() - myClock;
             temp += ((double)myClock)/CLOCKS_PER_SEC;
             //
@@ -189,4 +180,3 @@ int main() {
     //
     return 0;
 }
-
